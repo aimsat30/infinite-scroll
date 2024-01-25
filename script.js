@@ -7,16 +7,18 @@ let totalImages = 0;
 let photosArray = [];
 
 // unsplash api
-const count = 30;
+const count = 5;
 const apiKey = 'X1UC704Yn5WRz66WL4MpbizxrDlmpa6pj6o5JVn3zt4';
+const query = 'red panda'
 const apiUri = `https://api.unsplash.com/photos/random?client_id=${apiKey}&count=${count}`;
 
 // image loaded function
 function imageLoaded(){
     imagesLoaded++;
     if(imagesLoaded === totalImages){
-        loader.hidden = true;
         ready = true;
+        loader.hidden = true;
+        count = 30;
     }
 }
 
