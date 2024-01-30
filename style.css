@@ -56,3 +56,30 @@ h1{
     }
     
 }
+
+.footer {
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1140px;
+}
+.footer .container .left, .footer .container .middle, .footer .container .right {
+    display: flex;
+    align-items: center;
+}
+.footer .container .middle {
+    justify-content: center;
+}
+.footer .container .right a {
+    margin-left: 10px;
+}
